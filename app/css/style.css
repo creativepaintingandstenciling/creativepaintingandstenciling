@@ -1,0 +1,51 @@
+html, body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6  {
+	font-family: 'Raleway', sans-serif;
+}
+
+body {
+	background-color: #F4F8FF;
+}
+
+a {
+	color: #517c91;
+}
+
+a:hover, a:focus {
+	color: #6299B4;
+}
+
+.wrapper {
+	background-color: #FFF;	
+	border: 1px solid #F0F0F0;
+	border-radius: 5px;
+	box-shadow: 2px 3px 7px #ECEBEB;
+	width: 100%;
+}
+
+.inner-item {
+    text-align: center;
+}
+    .inner-item > img {
+    	margin: 0 auto;
+    }
+
+.homepage-writing {
+	padding-top: 15px;
+	padding-left: 30px;
+}    
+
+.homepage-writing p {
+	font-size: 15px;
+	text-align: justify;	
+}
+
+/*bootstrap override*/
+.carousel-control.left, .carousel-control.right {
+	background-image: none;
+	color: #05172B;
+	font-size: 30px;
+}
+
+.carousel-control .glyphicon-chevron-left {
+	left: 30%;
+}

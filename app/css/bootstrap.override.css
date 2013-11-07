@@ -1,0 +1,25 @@
+html, body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6  {
+	font-family: 'Raleway', sans-serif;
+}
+
+body {
+	background-color: #F4F8FF;
+}
+
+a {
+	color: #517c91;
+}
+
+a:hover, a:focus {
+	color: #6299B4;
+}
+
+.carousel-control.left, .carousel-control.right {
+	background-image: none;
+	color: #05172B;
+	font-size: 30px;
+}
+
+.carousel-control .glyphicon-chevron-left {
+	left: 30%;
+}
