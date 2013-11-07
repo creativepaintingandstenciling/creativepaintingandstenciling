@@ -6,12 +6,9 @@ body {
 	background-color: #F4F8FF;
 }
 
-a {
-	color: #517c91;
-}
-
-a:hover, a:focus {
-	color: #6299B4;
+.main-nav > li.active > a {
+    color: #6299B4;
+    text-decoration: underline;
 }
 
 .wrapper {

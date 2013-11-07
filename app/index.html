@@ -8,17 +8,17 @@
     <link href="css/style.css" rel="stylesheet" media="screen">
 
   </head>
-  <body>
+  <body  ng-controller="HomeCtrl">
   <div class="container">
   	  <div class="header">
-      <a href="#/home"  ng-class="{active: slug == 'home'}">
+      <a href="#/home"ng-class="{active: $route.current.activeTab == 'home'}">
         <img src="img/logo.png" alt="Creative Painting and Stenciling" class="img-responsive" style="width: 65%;" />
       </a>
 
-        <ul class="list-inline" style="font-size: 22px;">
-          <li ng-class="{active: slug == 'gallery'}"><a href="#/gallery">Gallery</a></li>
-          <li ng-class="{active: slug == 'services'}"><a href="#/services">Services</a></li>
-          <li ng-class="{active: slug == 'contact'}"><a href="#/contact">Contact</a></li>
+        <ul class="list-inline main-nav" style="font-size: 22px;">
+          <li ng-class="{active: $route.current.activeTab == 'gallery'}"><a href="#/gallery">Gallery</a></li>
+          <li ng-class="{active: $route.current.activeTab == 'services'}"><a href="#/services">Services</a></li>
+          <li ng-class="{active: $route.current.activeTab == 'contact'}"><a href="#/contact">Contact</a></li>
         </ul>        
       </div>
   

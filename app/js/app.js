@@ -9,12 +9,12 @@ angular.module('cps', [
   //'cps.directives',
   //'controllers'
 ]).
-config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/home', {templateUrl: '/app/home.html', controller: 'HomeCtrl'});
-  $routeProvider.when('/gallery', {templateUrl: '/app/gallery.html', controller: 'GalleryCtrl'});
-  $routeProvider.when('/services:slug', {templateUrl: '/app/services.html', controller: 'ServicesCtrl'});
-  $routeProvider.when('/contact:slug', {templateUrl: '/app/contact.html', controller: 'ContactCtrl'});
-  $routeProvider.otherwise({redirectTo: '/home'});
+config(['$routeProvider', function ($routeProvider) {
+    $routeProvider.when('/home', { templateUrl: '/app/home.html', controller: 'HomeCtrl', activeTab: 'home' });
+    $routeProvider.when('/gallery', { templateUrl: '/app/gallery.html', controller: 'HomeCtrl', activeTab: 'gallery' });
+    $routeProvider.when('/services:slug', { templateUrl: '/app/services.html', controller: 'ServicesCtrl', activeTab: 'services' });
+    $routeProvider.when('/contact:slug', { templateUrl: '/app/contact.html', controller: 'ContactCtrl', activeTab: 'contact' });
+    $routeProvider.otherwise({ redirectTo: '/home' });
 }]);
 
 //var CPSSite = angular.module('CPSSite', []);
@@ -25,17 +25,19 @@ config(['$routeProvider', function($routeProvider) {
 //    .otherwise({redirectTo: '/page/home'});
 //});
 //
-function HomeCtrl ($scope, $rootScope, $http) {
-  // Load pages on startup
-  $http.get('/app/home.html').success(function (data) {
-    $rootScope.pages = data;
-  });
-
-  // Set the slug for menu active class
-  $scope.$on('routeLoaded', function (event, args) {
-      alert('foo');
-    $scope.slug = args.slug;
-  });
+function HomeCtrl($scope, $rootScope, $http, $route) {
+    // Load pages on startup
+    $http.get('/app/home.html').success(function (data) {
+        $rootScope.pages = data;
+        
+    });
+    $scope.$route = $route;
+    
+    // Set the slug for menu active class
+    //  $scope.$on('routeLoaded', function (event, args) {
+    //      alert('foo');
+    //    $scope.slug = args.slug;
+    //  });
 }
 //
 //function RouteController ($scope, $rootScope, $routeParams) {
