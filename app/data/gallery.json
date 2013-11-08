@@ -1,0 +1,27 @@
+[
+	{ 
+		"imgURL":"/img/", 
+		"caption":"Some awesome caption",
+		"category":"Cat 1"
+	}, 
+	{ 
+		"imgURL":"/img/", 
+		"caption":"Some awesome caption 2",
+		"category":"Cat 2"
+	}, 
+	{ 
+		"imgURL":"/img/", 
+		"caption":"Some awesome caption 3",
+		"category":"Cat 1"
+	}, 
+	{ 
+		"imgURL":"/img/", 
+		"caption":"Some awesome caption 4",
+		"category":"Cat 4"
+	}, 
+	{ 
+		"imgURL":"/img/", 
+		"caption":"Some awesome caption 5",
+		"category":"Cat 3"
+	},  
+]
