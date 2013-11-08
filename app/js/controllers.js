@@ -15,7 +15,7 @@ cpsController.controller('HomeCtrl', ['$scope', '$rootScope', '$http', '$route',
     $scope.$route = $route;
   }]);
  
-cpsController.controller('GalleryCtrl', ['$scope', '$routeParams',
+cpsController.controller('GalleryCtrl', ['$scope', '$http', '$routeParams',
   function($scope, $http) {
     $http.get('data/gallery.json').success(function(data) {
       $scope.gallery = data;

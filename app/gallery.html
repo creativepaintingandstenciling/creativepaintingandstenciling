@@ -13,95 +13,15 @@
 	<div class="col-xs-10">
 		<div class="thumbnail-row">
 			<ul class="list-inline thumbnail-list" id="Grid">
-				<li class="mix category_1">
-					<a href="#" class="thumbnail">
-						<img src="img/art/chef.jpg" class="gallery-img">
-					</a>
-				</li>
-				<li class="mix category_2">
-					<a href="#" class="thumbnail">
-						<img src="img/art/chef.jpg" class="gallery-img">
-					</a>
-				</li>
-				<li class="mix category_3">
-					<a href="#" class="thumbnail">
-						<img src="img/art/chef.jpg" class="gallery-img">
-					</a>
-				</li>
-				<li class="mix category_1">
-					<a href="#" class="thumbnail">
-						<img src="img/art/chef.jpg" class="gallery-img">
-					</a>
-				</li>
-				<li class="mix category_2">
-					<a href="#" class="thumbnail">
-						<img src="img/art/chef.jpg" class="gallery-img">
-					</a>
-				</li>
-				<li class="mix category_3">
-					<a href="#" class="thumbnail">
-						<img src="img/art/chef.jpg" class="gallery-img">
-					</a>
-				</li>
-				<li class="mix category_1">
-					<a href="#" class="thumbnail">
-						<img src="img/art/chef.jpg" class="gallery-img">
-					</a>
-				</li>
-				<li class="mix category_2">
-					<a href="#" class="thumbnail">
-						<img src="img/art/chef.jpg" class="gallery-img">
-					</a>
-				</li>
-				<li class="mix category_3">
-					<a href="#" class="thumbnail">
-						<img src="img/art/chef.jpg" class="gallery-img">
+				<li class="mix category_1" ng-repeat="item in gallery">
+					<a href="javascript:void(0);" class="thumbnail">
+						<img ng-src="{{item.imgURL}}" class="gallery-img" />
+                        <p>{{item.caption}}</p>
+                        <small>{{item.category}}</small>
 					</a>
 				</li>
 			</ul>
 		</div>
-
-
-<!-- 		<div class="row thumbnail-row" id="Grid">
-		  <div class="col-sm-6 col-md-2 mix category_1" data-type="child">
-		    <a href="#" class="thumbnail">
-		    	child1
-		      <img src="img/art/chef.jpg" class="gallery-img">
-		    </a>
-		  </div>
-		  <div class="col-sm-6 col-md-2 mix category_1" data-type="child">
-		    <a href="#" class="thumbnail">
-		    	child2
-		      <img src="img/art/chef.jpg" class="gallery-img">
-		    </a>
-		  </div>
-		  <div class="col-sm-6 col-md-2 mix category_2" data-type="writing">
-		    <a href="#" class="thumbnail">
-		    	writing1
-		      <img src="img/art/chef.jpg" class="gallery-img">
-		    </a>
-		  </div>
-		  <div class="col-sm-6 col-md-2 mix category_1" data-type="child">
-		    <a href="#" class="thumbnail">
-		    	child3
-		      <img src="img/art/chef.jpg" class="gallery-img">
-		    </a>
-		  </div>
-		  <div class="col-sm-6 col-md-2 mix category_2" data-type="writing">
-		    <a href="#" class="thumbnail">
-		    	writing2
-		      <img src="img/art/chef.jpg" class="gallery-img">
-		    </a>
-		  </div>
-		  <div class="col-sm-6 col-md-2 mix category_3" data-type="writing">
-		    <a href="#" class="thumbnail">
-		    	writing3
-		      <img src="img/art/chef.jpg" class="gallery-img">
-		    </a>
-		  </div>
-		</div> -->
-
-
 	</div>
 </div>
 

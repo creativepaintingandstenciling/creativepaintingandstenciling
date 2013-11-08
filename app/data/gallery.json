@@ -1,27 +1,17 @@
 [
 	{ 
-		"imgURL":"/img/", 
+		"imgURL":"/app/img/art/chef.jpg", 
 		"caption":"Some awesome caption",
 		"category":"Cat 1"
 	}, 
 	{ 
-		"imgURL":"/img/", 
+		"imgURL":"/app/img/art/clothes-line3.jpg", 
 		"caption":"Some awesome caption 2",
 		"category":"Cat 2"
 	}, 
 	{ 
-		"imgURL":"/img/", 
+		"imgURL":"/app/img/art/dino-close.jpg", 
 		"caption":"Some awesome caption 3",
 		"category":"Cat 1"
-	}, 
-	{ 
-		"imgURL":"/img/", 
-		"caption":"Some awesome caption 4",
-		"category":"Cat 4"
-	}, 
-	{ 
-		"imgURL":"/img/", 
-		"caption":"Some awesome caption 5",
-		"category":"Cat 3"
-	},  
+	}
 ]
