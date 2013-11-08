@@ -46,3 +46,12 @@ body {
 .carousel-control .glyphicon-chevron-left {
 	left: 30%;
 }
+
+#Grid .mix{
+    opacity: 0;
+    display: none;
+}
+
+.gallery-img {
+  width: 140px;
+}
