@@ -1,17 +1,47 @@
 [
 	{ 
 		"imgURL":"/app/img/art/chef.jpg", 
-		"caption":"Some awesome caption",
-		"category":"category_1"
+		"caption":"Some awesome caption CHILD",
+		"category":"child"
 	}, 
 	{ 
 		"imgURL":"/app/img/art/clothes-line3.jpg", 
-		"caption":"Some awesome caption 2",
-		"category":"category_2"
+		"caption":"Some awesome caption 2 WRITING",
+		"category":"writing"
 	}, 
 	{ 
 		"imgURL":"/app/img/art/dino-close.jpg", 
-		"caption":"Some awesome caption 3",
-		"category":"category_3"
+		"caption":"Some awesome caption 3 ANIMALS",
+		"category":"animals"
+	},
+	{ 
+		"imgURL":"/app/img/art/chef.jpg", 
+		"caption":"Some awesome caption CHILD",
+		"category":"child"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/clothes-line3.jpg", 
+		"caption":"Some awesome caption 2 WRITING",
+		"category":"writing"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/dino-close.jpg", 
+		"caption":"Some awesome caption 3 ANIMALS",
+		"category":"animals"
+	},
+	{ 
+		"imgURL":"/app/img/art/chef.jpg", 
+		"caption":"Some awesome caption CHILD",
+		"category":"child"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/clothes-line3.jpg", 
+		"caption":"Some awesome caption 2 WRITING",
+		"category":"writing"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/dino-close.jpg", 
+		"caption":"Some awesome caption 3 ANIMALS",
+		"category":"animals"
 	}
 ]

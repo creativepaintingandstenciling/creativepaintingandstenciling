@@ -7,17 +7,17 @@ body {
 }
 
 .main-nav > li.active > a {
-    color: #6299B4;
+    color: #2a6496;
     text-decoration: underline;
 }
 
-.wrapper {
+.card-view {
 	background-color: #FFF;	
 	border: 1px solid #F0F0F0;
 	border-radius: 5px;
 	box-shadow: 2px 3px 7px #ECEBEB;
-	width: 100%;
 }
+
 
 .inner-item {
     text-align: center;
