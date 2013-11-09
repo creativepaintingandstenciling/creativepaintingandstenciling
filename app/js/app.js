@@ -4,10 +4,10 @@
 // Declare app level module which depends on filters, and services
 angular.module('cps', [
   'ngRoute',
-  'cpsController'
+  'cpsController',
   //'cps.filters',
   //'cps.services',
-  //'cps.directives',
+  'mixDirective',
   //'cps.controllers'
 ]).
 config(['$routeProvider', function ($routeProvider) {

@@ -2,10 +2,13 @@
 
 /* Directives */
 
-
-angular.module('cps.directives', []).
-  directive('appVersion', ['version', function(version) {
-    return function(scope, elm, attrs) {
-      elm.text(version);
+var mixDirective = angular.module('mixDirective', []);
+ 
+mixDirective.directive('mixPlugin', function() {
+    return {        
+        restrict: 'A',
+        link: function(scope, element, attrs) {
+            $('#Grid').mixitup(scope.$eval(attrs.mixPlugin));
+        }
     };
-  }]);
+});

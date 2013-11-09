@@ -2,16 +2,16 @@
 	{ 
 		"imgURL":"/app/img/art/chef.jpg", 
 		"caption":"Some awesome caption",
-		"category":"Cat 1"
+		"category":"category_1"
 	}, 
 	{ 
 		"imgURL":"/app/img/art/clothes-line3.jpg", 
 		"caption":"Some awesome caption 2",
-		"category":"Cat 2"
+		"category":"category_2"
 	}, 
 	{ 
 		"imgURL":"/app/img/art/dino-close.jpg", 
 		"caption":"Some awesome caption 3",
-		"category":"Cat 1"
+		"category":"category_3"
 	}
 ]
