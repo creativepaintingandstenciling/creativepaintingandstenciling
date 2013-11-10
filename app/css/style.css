@@ -6,6 +6,10 @@ body {
 	background-color: #F4F8FF;
 }
 
+textarea {
+	resize: vertical;
+}
+
 .main-nav > li.active > a {
     color: #2a6496;
     text-decoration: underline;
@@ -17,7 +21,6 @@ body {
 	border-radius: 5px;
 	box-shadow: 2px 3px 7px #ECEBEB;
 }
-
 
 .inner-item {
     text-align: center;
@@ -54,4 +57,8 @@ body {
 
 .gallery-img {
   width: 140px;
+}
+
+.form-error {
+	color: #b94a48;
 }

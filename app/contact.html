@@ -1,0 +1,45 @@
+
+<div ng-controller="ContactCtrl">
+  <form class="form-horizontal" role="form" name="contactForm" novalidate ng-submit="submitForm();">
+    <div class="form-group" ng-class="{'has-error': contactForm.nameField.$dirty && contactForm.nameField.$invalid}">
+      <label for="name" class="col-sm-2 control-label">Name</label>
+      <div class="col-sm-5">
+        <input type="text" name="nameField" class="form-control" id="name" placeholder="Name (required)" ng-model="myVal" required>
+
+        <div class="form-error" ng-show="contactForm.nameField.$dirty && contactForm.nameField.$invalid">
+          <span ng-show="contactForm.nameField.$error.required">Your name is required.</span>
+        </div>   
+
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email" class="col-sm-2 control-label">Email</label>
+      <div class="col-sm-5">
+        <input type="email" class="form-control" id="email" placeholder="Email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="phone" class="col-sm-2 control-label">Phone</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="phone" placeholder="Phone">
+      </div>
+    </div>
+    <div class="form-group" ng-class="{'has-error': contactForm.contactMsg.$dirty && contactForm.contactMsg.$invalid}">
+      <label for="msg" class="col-sm-2 control-label">Message</label>
+      <div class="col-sm-5">
+        <textarea class="form-control" name="contactMsg" id="msg" rows="3" placeholder="Message (required)" ng-model="mymsgVal" required></textarea>
+
+        <div class="form-error" ng-show="contactForm.contactMsg.$dirty && contactForm.contactMsg.$invalid">
+          <span ng-show="contactForm.contactMsg.$error.required">Message is required.</span>
+        </div> 
+
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default" 
+        ng-disabled="contactForm.nameField.$pristine || contactForm.nameField.$dirty && contactForm.nameField.$invalid || contactForm.contactMsg.$dirty && contactForm.contactMsg.$invalid">Send Message</button>
+      </div>
+    </div>
+  </form>
+</div>
