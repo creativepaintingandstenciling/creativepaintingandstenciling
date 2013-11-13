@@ -37,19 +37,51 @@ cpsController.controller('ServicesCtrl', ['$scope', '$rootScope', '$http', '$rou
 
 cpsController.controller('ContactCtrl', ['$scope', '$rootScope', '$http', '$route',
   function ContactCtrl($scope, $rootScope, $http, $route) {
-    // Load pages on startup
-    $http.get('/app/contact.html').success(function (data) {
-        $rootScope.pages = data;
-        
-    });    
-    //passes $route to the view for activeTab
-    $scope.$route = $route;
+      // Load pages on startup
+      $http.get('/app/contact.html').success(function (data) {
+          $rootScope.pages = data;
 
-    $scope.username1 = 'Peter Parker';
-    $scope.email1 = 'pparker@gmail.com';
+      });
+      //passes $route to the view for activeTab
+      $scope.$route = $route;
 
-    $scope.submitForm = function () {
-        console.info("Here I should implement the logic to send a request to the server.");
-    }
+      //    $scope.username1 = 'Peter Parker';
+      //    $scope.email1 = 'pparker@gmail.com';
+      //
+      //    $scope.submitForm = function () {
+      //        console.info("Here I should implement the logic to send a request to the server.");
+      //    }
 
+
+      $scope.lastForm = {};
+
+      $scope.sendForm = function (form) {
+          $scope.lastForm = angular.copy(form);
+          $http({
+              method: 'POST',
+              url: "/app/data/email.php",
+              data: {
+                  'contactname': $scope.form.name,
+                  //'weburl': $scope.form.website,
+                  'email': $scope.form.email,
+                  //'app': $scope.form.project,
+                  //'subject': $scope.form.subject,
+                  'message': $scope.form.message
+              },
+              headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+          }).success(function (data, status, headers, config) {
+              $scope.resultData = data;
+              alert("Message sent successfully. We'll get in touch with you soon.");
+
+          }).error(function (data, status, headers, config) {
+              $scope.resultData = data;
+              alert("Sending message failed.");
+          });
+      }
+
+      $scope.resetForm = function () {
+          $scope.form = angular.copy($scope.lastForm);
+      }
+      ContactCtrl.$inject = ['$scope', '$http'];
   }]);
+
