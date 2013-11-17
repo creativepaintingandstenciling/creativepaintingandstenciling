@@ -11,12 +11,14 @@ angular.module('cps', [
   //'cps.controllers'
 ]).
 config(['$routeProvider', function ($routeProvider) {
-    //$locationProvider.html5Mode(true);
-    $routeProvider.when('/home', { templateUrl: '/app/home.html', controller: 'HomeCtrl', activeTab: 'home' });
-    $routeProvider.when('/gallery', { templateUrl: '/app/gallery.html', controller: 'HomeCtrl', activeTab: 'gallery' });
-    $routeProvider.when('/services', { templateUrl: '/app/services.html', controller: 'ServicesCtrl', activeTab: 'services' });
-    $routeProvider.when('/contact', { templateUrl: '/app/contact.html', controller: 'ContactCtrl', activeTab: 'contact' });
+    
+    $routeProvider.when('/home', { templateUrl: 'views/home.html', controller: 'HomeCtrl', activeTab: 'home' });
+    $routeProvider.when('/gallery', { templateUrl: 'views/gallery.html', controller: 'HomeCtrl', activeTab: 'gallery' });
+    $routeProvider.when('/services', { templateUrl: 'views/services.html', controller: 'ServicesCtrl', activeTab: 'services' });
+    $routeProvider.when('/contact', { templateUrl: 'views/contact.html', controller: 'ContactCtrl', activeTab: 'contact' });
     $routeProvider.otherwise({ redirectTo: '/home' });
+
+    //$locationProvider.html5Mode(true);
 }]);
 
 
