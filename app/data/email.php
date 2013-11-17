@@ -56,6 +56,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $email = trim($objData->email);
         }
 
+        //Phone field - not required
+        $phone = trim($objData->phone)
+
         //Check to make sure comments were entered
         if(trim($objData->message) == '') {
                 $hasError = true;
@@ -70,14 +73,16 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         //If there is no error, send the email
         if(!isset($hasError)) {
-                $body = "Name: $name \nEmail: $email \n\nComments:\n $comments";
+                $body = "Name: $name \nEmail: $email  \nPhone: $phone \n\nComments:\n $comments";
                 $headers = 'From: '.$nameTo.' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
         mail($emailTo, $subject, $body, $headers);
-    }
-    else
-    {
-        echo ("There has been an error");
-    }
+
+        header('Location: contact-success.html');
+        }
+        else
+        {
+            echo ("There has been an error");
+        }
 }
 echo (".");
 

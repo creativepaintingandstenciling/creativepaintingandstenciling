@@ -23,3 +23,13 @@ a:hover, a:focus {
 .carousel-control .glyphicon-chevron-left {
 	left: 30%;
 }
+
+.modal-header, .modal-footer {
+	border-bottom: none;
+	border-top: none;
+}
+
+.close-modal {
+	font-size: 30px;
+	font-weight: 100;
+}

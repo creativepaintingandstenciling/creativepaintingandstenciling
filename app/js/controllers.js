@@ -13,7 +13,9 @@ cpsController.controller('HomeCtrl', ['$scope', '$rootScope', '$http', '$route',
     });    
     //passes $route to the view for activeTab
     $scope.$route = $route;
+
   }]);
+
  
 cpsController.controller('GalleryCtrl', ['$scope', '$http', '$routeParams',
   function($scope, $http) {
@@ -23,6 +25,7 @@ cpsController.controller('GalleryCtrl', ['$scope', '$http', '$routeParams',
  
     
   }]);
+
 
 cpsController.controller('ServicesCtrl', ['$scope', '$rootScope', '$http', '$route',
   function ServicesCtrl($scope, $rootScope, $http, $route) {
@@ -34,6 +37,7 @@ cpsController.controller('ServicesCtrl', ['$scope', '$rootScope', '$http', '$rou
     //passes $route to the view for activeTab
     $scope.$route = $route;
   }]);
+
 
 cpsController.controller('ContactCtrl', ['$scope', '$rootScope', '$http', '$route',
   function ContactCtrl($scope, $rootScope, $http, $route) {
@@ -64,6 +68,7 @@ cpsController.controller('ContactCtrl', ['$scope', '$rootScope', '$http', '$rout
                   'contactname': $scope.form.name,
                   //'weburl': $scope.form.website,
                   'email': $scope.form.email,
+                  'phone': $scope.form.phone,
                   //'app': $scope.form.project,
                   //'subject': $scope.form.subject,
                   'message': $scope.form.message

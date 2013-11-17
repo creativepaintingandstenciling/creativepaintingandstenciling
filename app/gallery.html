@@ -7,8 +7,8 @@
 		  	<a href="javascript:void(0);">Show All</a></li>
 		  <li class="filter" data-filter="child"><a href="javascript:void(0);">Children &amp; Teen Rooms</a></li>
 		  <li class="filter" data-filter="writing"><a href="javascript:void(0);">Writing &amp; Text</a></li>
-		  <li class="filter" data-filter="animals"><a href="javascript:void(0);">Animals</a></li>
-		  <li class="filter" data-filter="murals"><a href="javascript:void(0);">Murals</a></li>
+		  <li class="filter" data-filter="animal"><a href="javascript:void(0);">Animals</a></li>
+		  <li class="filter" data-filter="mural"><a href="javascript:void(0);">Murals</a></li>
 		  <li class="filter" data-filter="people"><a href="javascript:void(0);">People</a></li>
 		  <li class="filter" data-filter="faux"><a href="javascript:void(0);">Faux Finishing</a></li>
 		  <li class="filter" data-filter="vines"><a href="javascript:void(0);">Vines &amp; Flowers</a></li>
@@ -20,10 +20,10 @@
 		<div class="thumbnail-row">
 			<ul class="list-inline thumbnail-list" id="Grid" >
 				<li class="mix {{item.category}}" ng-repeat="item in gallery" mix-plugin>
-					<a href="javascript:void(0);" class="thumbnail">
+					<a href="{{item.imgURL}}" class="thumbnail" data-gallery>
 						<img ng-src="{{item.imgURL}}" class="gallery-img" />
-                        <p>{{item.caption}}</p>
-                        <small>{{item.category}}</small>
+                        <!-- <p>{{item.caption}}</p>
+                        <small>{{item.category}}</small> -->
 					</a>
 				</li>
 			</ul>
@@ -31,3 +31,37 @@
 	</div>
 </div>
 
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

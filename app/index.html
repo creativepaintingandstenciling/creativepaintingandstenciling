@@ -5,22 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-image-gallery.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link href="css/bootstrap.override.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet" media="screen">
-
+    
   </head>
   <body  ng-controller="HomeCtrl">
   <div class="container">
-  	  <div class="header">
-      <a href="#/home"ng-class="{active: $route.current.activeTab == 'home'}">
-        <img src="img/logo.png" alt="Creative Painting and Stenciling" class="img-responsive" style="width: 65%;" />
-      </a>
+  	  <header class="header">
+        <a href="/home"ng-class="{active: $route.current.activeTab == 'home'}">
+          <img src="img/logo.png" alt="Creative Painting and Stenciling" class="img-responsive" style="width: 65%;" />
+        </a>
 
         <ul class="list-inline main-nav" style="font-size: 22px;">
           <li ng-class="{active: $route.current.activeTab == 'gallery'}"><a href="#/gallery">Gallery</a></li>
           <li ng-class="{active: $route.current.activeTab == 'services'}"><a href="#/services">Services</a></li>
           <li ng-class="{active: $route.current.activeTab == 'contact'}"><a href="#/contact">Contact</a></li>
         </ul>        
-      </div>
+      </header>
   
     <div ng-view></div>
 
@@ -37,9 +40,12 @@
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>    
     <script src="js/directives.js"></script>
-    <script src="lib/ui-utils.js"></script>
+    <!--<script src="lib/ui-utils.js"></script>-->
     <script src="lib/jquery.mixitup.js"></script>
     <script src="lib/bootstrap.js"></script>
+    <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="lib/bootstrap-image-gallery.js"></script>
+    
     
   </body>
 </html>

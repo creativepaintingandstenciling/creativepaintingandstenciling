@@ -1,47 +1,202 @@
 [
+
 	{ 
-		"imgURL":"/app/img/art/chef.jpg", 
-		"caption":"Some awesome caption CHILD",
+		"imgURL":"/app/img/art/bright-flowers.jpg", 		
 		"category":"child"
 	}, 
 	{ 
-		"imgURL":"/app/img/art/clothes-line3.jpg", 
-		"caption":"Some awesome caption 2 WRITING",
-		"category":"writing"
+		"imgURL":"/app/img/art/dino-close.jpg", 		
+		"category":"child"
 	}, 
 	{ 
-		"imgURL":"/app/img/art/dino-close.jpg", 
-		"caption":"Some awesome caption 3 ANIMALS",
-		"category":"animals"
+		"imgURL":"/app/img/art/dino-detail.jpg", 		
+		"category":"child"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/dinos-more.jpg", 		
+		"category":"child"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/dinos.jpg", 		
+		"category":"child"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/flower-ceiling-fan.jpg", 		
+		"category":"child"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/flower-close.jpg", 		
+		"category":"child"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/flower-spark.jpg", 		
+		"category":"child"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/flowers-crib.jpg", 		
+		"category":"child"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/girls-room-polka-dots.jpg", 		
+		"category":"child"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/humming-bird-butterfly.jpg", 		
+		"category":"child"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/pink-flowers.jpg", 		
+		"category":"child"
 	},
+
+
+	
 	{ 
-		"imgURL":"/app/img/art/chef.jpg", 
-		"caption":"Some awesome caption CHILD",
-		"category":"child"
-	}, 
-	{ 
-		"imgURL":"/app/img/art/clothes-line3.jpg", 
-		"caption":"Some awesome caption 2 WRITING",
+		"imgURL":"/app/img/art/writing.jpg", 		
 		"category":"writing"
 	}, 
 	{ 
-		"imgURL":"/app/img/art/dino-close.jpg", 
-		"caption":"Some awesome caption 3 ANIMALS",
-		"category":"animals"
-	},
-	{ 
-		"imgURL":"/app/img/art/chef.jpg", 
-		"caption":"Some awesome caption CHILD",
-		"category":"child"
-	}, 
-	{ 
-		"imgURL":"/app/img/art/clothes-line3.jpg", 
-		"caption":"Some awesome caption 2 WRITING",
+		"imgURL":"/app/img/art/writing2.jpg", 		
 		"category":"writing"
 	}, 
 	{ 
-		"imgURL":"/app/img/art/dino-close.jpg", 
-		"caption":"Some awesome caption 3 ANIMALS",
-		"category":"animals"
+		"imgURL":"/app/img/art/name-stenciled.jpg", 		
+		"category":"writing"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/just-be-yourself.jpg", 		
+		"category":"writing"
+	}, 
+
+
+	
+	{ 
+		"imgURL":"/app/img/art/peacock.jpg", 		
+		"category":"animal"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/pelican1.jpg", 		
+		"category":"animal"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/pelican2.jpg", 		
+		"category":"animal"
+	}, 
+
+
+	
+	{ 
+		"imgURL":"/app/img/art/mural-1.jpg", 		
+		"category":"mural"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/mural-2.jpg", 		
+		"category":"mural"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/mural-3.jpg", 		
+		"category":"mural"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/soldiers.jpg", 		
+		"category":"mural"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/boat.jpg", 		
+		"category":"mural"
+	}, 
+
+
+	
+	{ 
+		"imgURL":"/app/img/art/poker-guy.jpg", 		
+		"category":"people"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/butler.jpg", 		
+		"category":"people"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/chef.jpg", 		
+		"category":"people"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/puck.jpg", 		
+		"category":"people"
+	}, 
+
+
+	
+	{ 
+		"imgURL":"/app/img/art/faux-close.jpg", 		
+		"category":"faux"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/faux-finish-green.jpg", 		
+		"category":"faux"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/faux1.jpg", 		
+		"category":"faux"
+	}, 
+
+
+	
+	{ 
+		"imgURL":"/app/img/art/kitchen-grape-vines.jpg", 		
+		"category":"vines"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/bathroom-tub.jpg", 		
+		"category":"vines"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/potted-plant.jpg", 		
+		"category":"vines"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/potted-plant2.jpg", 		
+		"category":"vines"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/vines-flowers.jpg", 		
+		"category":"vines"
+	}, 
+
+
+
+	{ 
+		"imgURL":"/app/img/art/gamble.jpg", 		
+		"category":"misc"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/brick-wall.jpg", 		
+		"category":"misc"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/brick-wall-close.jpg", 		
+		"category":"misc"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/brick-wall-corner.jpg", 		
+		"category":"misc"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/clothes-line3.jpg", 		
+		"category":"misc"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/flowers-exhaust.jpg", 		
+		"category":"misc"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/flowers-sink.jpg", 		
+		"category":"misc"
+	}, 
+	{ 
+		"imgURL":"/app/img/art/toothbrush.jpg", 		
+		"category":"misc"
 	}
+
+
 ]

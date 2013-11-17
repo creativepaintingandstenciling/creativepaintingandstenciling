@@ -13,7 +13,6 @@ mixDirective.directive('mixPlugin', function() {
     };
 });
 
-
 var cpsSubmitDirective = {
         'rcSubmit': function () {
             return {

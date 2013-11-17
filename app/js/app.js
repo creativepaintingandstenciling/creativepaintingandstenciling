@@ -11,6 +11,7 @@ angular.module('cps', [
   //'cps.controllers'
 ]).
 config(['$routeProvider', function ($routeProvider) {
+    //$locationProvider.html5Mode(true);
     $routeProvider.when('/home', { templateUrl: '/app/home.html', controller: 'HomeCtrl', activeTab: 'home' });
     $routeProvider.when('/gallery', { templateUrl: '/app/gallery.html', controller: 'HomeCtrl', activeTab: 'gallery' });
     $routeProvider.when('/services', { templateUrl: '/app/services.html', controller: 'ServicesCtrl', activeTab: 'services' });

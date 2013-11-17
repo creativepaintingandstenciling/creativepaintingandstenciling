@@ -10,6 +10,14 @@ textarea {
 	resize: vertical;
 }
 
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.header {
+	margin-bottom: 3.5%;
+}
+
 .main-nav > li.active > a {
     color: #2a6496;
     text-decoration: underline;
@@ -20,6 +28,10 @@ textarea {
 	border: 1px solid #F0F0F0;
 	border-radius: 5px;
 	box-shadow: 2px 3px 7px #ECEBEB;
+}
+
+.home-card {
+	margin-bottom: 50px;
 }
 
 .inner-item {
@@ -56,9 +68,30 @@ textarea {
 }
 
 .gallery-img {
-  width: 140px;
+	background-repeat:no-repeat;
+	background-size:cover;
+	max-height: 105px;
+  	width: 140px;
 }
 
 .form-error {
 	color: #b94a48;
 }
+
+.contact-info {
+	padding: 20px;
+}
+
+.services-view {
+	width: 50%;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.services-list li {
+	margin-bottom: 10px;
+}
+
+
+
+
