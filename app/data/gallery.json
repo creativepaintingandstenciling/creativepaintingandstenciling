@@ -1,200 +1,200 @@
 [
 
 	{ 
-		"imgURL":"img/art/bright-flowers.jpg", 		
+		"imgURL":"bright-flowers.jpg", 		
 		"category":"child"
 	}, 
 	{ 
-		"imgURL":"img/art/dino-close.jpg", 		
+		"imgURL":"dino-close.jpg", 		
 		"category":"child"
 	}, 
 	{ 
-		"imgURL":"img/art/dino-detail.jpg", 		
+		"imgURL":"dino-detail.jpg", 		
 		"category":"child"
 	}, 
 	{ 
-		"imgURL":"img/art/dinos-more.jpg", 		
+		"imgURL":"dinos-more.jpg", 		
 		"category":"child"
 	}, 
 	{ 
-		"imgURL":"img/art/dinos.jpg", 		
+		"imgURL":"dinos.jpg", 		
 		"category":"child"
 	}, 
 	{ 
-		"imgURL":"img/art/flower-ceiling-fan.jpg", 		
+		"imgURL":"flower-ceiling-fan.jpg", 		
 		"category":"child"
 	}, 
 	{ 
-		"imgURL":"img/art/flower-close.jpg", 		
+		"imgURL":"flower-close.jpg", 		
 		"category":"child"
 	}, 
 	{ 
-		"imgURL":"img/art/flower-spark.jpg", 		
+		"imgURL":"flower-spark.jpg", 		
 		"category":"child"
 	}, 
 	{ 
-		"imgURL":"img/art/flowers-crib.jpg", 		
+		"imgURL":"flowers-crib.jpg", 		
 		"category":"child"
 	}, 
 	{ 
-		"imgURL":"img/art/girls-room-polka-dots.jpg", 		
+		"imgURL":"girls-room-polka-dots.jpg", 		
 		"category":"child"
 	}, 
 	{ 
-		"imgURL":"img/art/humming-bird-butterfly.jpg", 		
+		"imgURL":"humming-bird-butterfly.jpg", 		
 		"category":"child"
 	}, 
 	{ 
-		"imgURL":"img/art/pink-flowers.jpg", 		
+		"imgURL":"pink-flowers.jpg", 		
 		"category":"child"
 	},
 
 
 	
 	{ 
-		"imgURL":"img/art/writing.jpg", 		
+		"imgURL":"writing.jpg", 		
 		"category":"writing"
 	}, 
 	{ 
-		"imgURL":"img/art/writing2.jpg", 		
+		"imgURL":"writing2.jpg", 		
 		"category":"writing"
 	}, 
 	{ 
-		"imgURL":"img/art/name-stenciled.jpg", 		
+		"imgURL":"name-stenciled.jpg", 		
 		"category":"writing"
 	}, 
 	{ 
-		"imgURL":"img/art/just-be-yourself.jpg", 		
+		"imgURL":"just-be-yourself.jpg", 		
 		"category":"writing"
 	}, 
 
 
 	
 	{ 
-		"imgURL":"img/art/peacock.jpg", 		
+		"imgURL":"peacock.jpg", 		
 		"category":"animal"
 	}, 
 	{ 
-		"imgURL":"img/art/pelican1.jpg", 		
+		"imgURL":"pelican1.jpg", 		
 		"category":"animal"
 	}, 
 	{ 
-		"imgURL":"img/art/pelican2.jpg", 		
+		"imgURL":"pelican2.jpg", 		
 		"category":"animal"
 	}, 
 
 
 	
 	{ 
-		"imgURL":"img/art/mural-1.jpg", 		
+		"imgURL":"mural-1.jpg", 		
 		"category":"mural"
 	}, 
 	{ 
-		"imgURL":"img/art/mural-2.jpg", 		
+		"imgURL":"mural-2.jpg", 		
 		"category":"mural"
 	}, 
 	{ 
-		"imgURL":"img/art/mural-3.jpg", 		
+		"imgURL":"mural-3.jpg", 		
 		"category":"mural"
 	}, 
 	{ 
-		"imgURL":"img/art/soldiers.jpg", 		
+		"imgURL":"soldiers.jpg", 		
 		"category":"mural"
 	}, 
 	{ 
-		"imgURL":"img/art/boat.jpg", 		
+		"imgURL":"boat.jpg", 		
 		"category":"mural"
 	}, 
 
 
 	
 	{ 
-		"imgURL":"img/art/poker-guy.jpg", 		
+		"imgURL":"poker-guy.jpg", 		
 		"category":"people"
 	}, 
 	{ 
-		"imgURL":"img/art/butler.jpg", 		
+		"imgURL":"butler.jpg", 		
 		"category":"people"
 	}, 
 	{ 
-		"imgURL":"img/art/chef.jpg", 		
+		"imgURL":"chef.jpg", 		
 		"category":"people"
 	}, 
 	{ 
-		"imgURL":"img/art/puck.jpg", 		
+		"imgURL":"puck.jpg", 		
 		"category":"people"
 	}, 
 
 
 	
 	{ 
-		"imgURL":"img/art/faux-close.jpg", 		
+		"imgURL":"faux-close.jpg", 		
 		"category":"faux"
 	}, 
 	{ 
-		"imgURL":"img/art/faux-finish-green.jpg", 		
+		"imgURL":"faux-finish-green.jpg", 		
 		"category":"faux"
 	}, 
 	{ 
-		"imgURL":"img/art/faux1.jpg", 		
+		"imgURL":"faux1.jpg", 		
 		"category":"faux"
 	}, 
 
 
 	
 	{ 
-		"imgURL":"img/art/kitchen-grape-vines.jpg", 		
+		"imgURL":"kitchen-grape-vines.jpg", 		
 		"category":"vines"
 	}, 
 	{ 
-		"imgURL":"img/art/bathroom-tub.jpg", 		
+		"imgURL":"bathroom-tub.jpg", 		
 		"category":"vines"
 	}, 
 	{ 
-		"imgURL":"img/art/potted-plant.jpg", 		
+		"imgURL":"potted-plant.jpg", 		
 		"category":"vines"
 	}, 
 	{ 
-		"imgURL":"img/art/potted-plant2.jpg", 		
+		"imgURL":"potted-plant2.jpg", 		
 		"category":"vines"
 	}, 
 	{ 
-		"imgURL":"img/art/vines-flowers.jpg", 		
+		"imgURL":"vines-flowers.jpg", 		
 		"category":"vines"
 	}, 
 
 
 
 	{ 
-		"imgURL":"img/art/gamble.jpg", 		
+		"imgURL":"gamble.jpg", 		
 		"category":"misc"
 	}, 
 	{ 
-		"imgURL":"img/art/brick-wall.jpg", 		
+		"imgURL":"brick-wall.jpg", 		
 		"category":"misc"
 	}, 
 	{ 
-		"imgURL":"img/art/brick-wall-close.jpg", 		
+		"imgURL":"brick-wall-close.jpg", 		
 		"category":"misc"
 	}, 
 	{ 
-		"imgURL":"img/art/brick-wall-corner.jpg", 		
+		"imgURL":"brick-wall-corner.jpg", 		
 		"category":"misc"
 	}, 
 	{ 
-		"imgURL":"img/art/clothes-line3.jpg", 		
+		"imgURL":"clothes-line3.jpg", 		
 		"category":"misc"
 	}, 
 	{ 
-		"imgURL":"img/art/flowers-exhaust.jpg", 		
+		"imgURL":"flowers-exhaust.jpg", 		
 		"category":"misc"
 	}, 
 	{ 
-		"imgURL":"img/art/flowers-sink.jpg", 		
+		"imgURL":"flowers-sink.jpg", 		
 		"category":"misc"
 	}, 
 	{ 
-		"imgURL":"img/art/toothbrush.jpg", 		
+		"imgURL":"toothbrush.jpg", 		
 		"category":"misc"
 	}
 

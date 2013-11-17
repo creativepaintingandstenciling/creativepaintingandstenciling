@@ -8,7 +8,6 @@ angular.module('cps', [
   //'cps.filters',
   //'cps.services',
   'mixDirective',
-  //'cps.controllers'
 ]).
 config(['$routeProvider', function ($routeProvider) {
     
@@ -20,6 +19,7 @@ config(['$routeProvider', function ($routeProvider) {
 
     //$locationProvider.html5Mode(true);
 }]);
+
 
 
 

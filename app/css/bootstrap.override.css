@@ -33,3 +33,41 @@ a:hover, a:focus {
 	font-size: 30px;
 	font-weight: 100;
 }
+
+.modal-header .close {
+	margin-top: -5px;
+	margin-right: 15px;
+}
+
+.blueimp-gallery {
+	background: rgba(0,0,0,0.8);
+}
+
+.blueimp-gallery .modal-dialog {
+	max-width: 85%;
+}
+
+.modal-footer .btn {
+	padding: 3px 12px;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+	color: #FFF;
+	background-color: #6299B4;
+}
+
+.btn-primary {
+	color: #FFFFFF;
+	background-color: #6299B4;
+	border-color: #45748B;
+}
+
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary:active, 
+.btn-primary.active, 
+.open .dropdown-toggle.btn-primary {
+	color: #CFCFCF;
+	background-color: #3D7794;
+	border-color: #2A4C6B;
+}

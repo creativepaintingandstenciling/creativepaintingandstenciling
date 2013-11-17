@@ -27,24 +27,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $name = trim($objData->contactname);
         }
 
-//        $weburl = trim($objData->weburl);
-//
-//        //Check to make sure that the app field is not empty
-//        if(trim($objData->app) == '') {
-//                $hasError = true;
-//                echo ("Invalid app\n");
-//        } else {
-//                $app = trim($objData->app);
-//        }
-
-//        //Check to make sure that the subject field is not empty
-//        if(trim($objData->subject) == '') {
-//                $hasError = true;
-//                echo ("Invalid subject\n");
-//        } else {
-//                $subject = trim($objData->subject);
-//        }
-
         //Check to make sure sure that a valid email address is submitted
         if(trim($objData->email) == '')  {
                 $hasError = true;
