@@ -10,12 +10,20 @@ textarea {
 	resize: vertical;
 }
 
+.cps-logo {
+	width: 65%;
+}
+
 .cursor-pointer {
 	cursor: pointer;
 }
 
 .header {
 	margin-bottom: 3.5%;
+}
+
+.main-nav {
+	font-size: 22px;
 }
 
 .main-nav > li.active > a {
@@ -30,8 +38,13 @@ textarea {
 	box-shadow: 2px 3px 7px #ECEBEB;
 }
 
+.col-carousel {
+	padding-left: 0;
+}
+
 .home-card {
-	margin-bottom: 50px;
+	margin-bottom: 30px;
+	padding: 20px 0 20px 0;
 }
 
 .inner-item {
@@ -82,16 +95,27 @@ textarea {
 	padding: 20px;
 }
 
-.services-view {
-	width: 50%;
+.services-view {	
 	margin: 0 auto;
-	padding: 20px;
+	margin-top: 40%;
 }
 
 .services-list li {
 	margin-bottom: 10px;
 }
 
+@media (max-width: 992px) {
+	.main-nav {
+		font-size: 18px;
+	}
 
+	.homepage-writing p {
+		font-size: 13px;
+	}
+}
 
-
+@media (max-width: 1199px) {
+	.services-list {
+		font-size: 19px;
+	}
+}

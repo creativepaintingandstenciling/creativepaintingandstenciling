@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="cps">
   <head>
-    <title>CPS - v2</title>
+    <title>Creative Painting and Stenciling by Jeanette Mosier</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-image-gallery.min.css" rel="stylesheet" media="screen">
-    <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link href="css/blueimp-gallery.min.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap.override.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet" media="screen">
     
   </head>
-  <body  ng-controller="HomeCtrl">
+  <body ng-controller="HomeCtrl">
   <div class="container">
   	  <header class="header">
         <a href="#/home" ng-class="{active: $route.current.activeTab == 'home'}">
-          <img src="img/logo.png" alt="Creative Painting and Stenciling" class="img-responsive" style="width: 65%;" />
+          <img src="img/logo.png" alt="Creative Painting and Stenciling" class="img-responsive cps-logo" alt="Creative Painting and Stenciling by Jeanette Mosier" />
         </a>
 
-        <ul class="list-inline main-nav" style="font-size: 22px;">
+        <ul class="list-inline main-nav">
           <li ng-class="{active: $route.current.activeTab == 'gallery'}"><a href="#/gallery">Gallery</a></li>
           <li ng-class="{active: $route.current.activeTab == 'services'}"><a href="#/services">Services</a></li>
           <li ng-class="{active: $route.current.activeTab == 'contact'}"><a href="#/contact">Contact</a></li>
@@ -30,22 +30,19 @@
    </div><!--/container-->
     
 
-    <script src="lib/jquery-1.10.2.min.js"></script>
+    
     <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>-->
+    <script src="lib/jquery-1.10.2.min.js"></script>
     <script src="lib/angular/angular.js"></script>
     <script src="lib/angular/angular-route.js"></script>
-    <!--<script src="lib/angular/angular-resource.js"></script>
-    <script src="lib/angular/angular-cookies.js"></script>-->    
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>    
-    <script src="js/directives.js"></script>
-    <!--<script src="lib/ui-utils.js"></script>-->
+    <script src="js/directives.js"></script>    
     <script src="lib/jquery.mixitup.js"></script>
-    <script src="lib/bootstrap.js"></script>
-    <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-    <script src="lib/bootstrap-image-gallery.js"></script>
-    
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/jquery.blueimp-gallery.min.js"></script>
+    <script src="lib/bootstrap-image-gallery.min.js"></script>
     
   </body>
 </html>
