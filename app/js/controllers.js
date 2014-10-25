@@ -54,6 +54,7 @@ CPS.controller('ContactCtrl', ['$scope', '$rootScope', '$http', '$route',
           }).success(function (data, status, headers, config) {
               $scope.resultData = data;
               alert("Message sent successfully. We'll get in touch with you soon.");
+              $location.path( "app/contact.html" );
 
           }).error(function (data, status, headers, config) {
               $scope.resultData = data;
