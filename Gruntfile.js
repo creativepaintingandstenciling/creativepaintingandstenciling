@@ -23,7 +23,7 @@ grunt.initConfig({
     cssmin: {
       combine: {
         files: {
-          'app/css/style.min.css': 'app/css/style.css'
+          'app/css/style.min.css': ['app/css/bootstrap.override.css', 'app/css/style.css']
         }
       }
     },

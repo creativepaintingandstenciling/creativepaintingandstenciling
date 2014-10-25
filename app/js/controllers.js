@@ -42,23 +42,28 @@ CPS.controller('ContactCtrl', ['$scope', '$rootScope', '$http', '$route',
       $scope.sendForm = function (form) {
           $scope.lastForm = angular.copy(form);
           $http({
+              url: "//forms.brace.io/jeanette@creativepaintingandstenciling.com",
               method: 'POST',
-              url: "data/email.php",
               data: {
-                  'contactname': $scope.form.name,
-                  'email': $scope.form.email,
-                  'phone': $scope.form.phone,                  
-                  'message': $scope.form.message
+                  name: $scope.form.name,
+                  email: $scope.form.email,
+                  phone: $scope.form.phone,                  
+                  message: $scope.form.message
               },
-              headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+              headers: { 
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+              }
           }).success(function (data, status, headers, config) {
               $scope.resultData = data;
-              alert("Message sent successfully. We'll get in touch with you soon.");
+              //alert("Message sent successfully. We'll get in touch with you soon.");
+              $(".contact-success").show();
               $location.path( "app/contact.html" );
 
           }).error(function (data, status, headers, config) {
               $scope.resultData = data;
-              alert("Sending message failed.");
+              $(".contact-fail").show();
+              //alert("Sending message failed.");
           });
       }
 
@@ -68,4 +73,5 @@ CPS.controller('ContactCtrl', ['$scope', '$rootScope', '$http', '$route',
       ContactCtrl.$inject = ['$scope', '$http'];
   }]);
 
+//url: "data/email.php", 'contactname': $scope.form.name,headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
 

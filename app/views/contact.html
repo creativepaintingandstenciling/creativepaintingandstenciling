@@ -6,7 +6,20 @@
       <h4><strong>Email:</strong></h4><p> jeanette@creativepaintingandstenciling.com</p>
     </div>
     <div class="col-sm-8">
+
+    <div class="contact-success alert alert-success alert-dismissible" role="alert" style="display:none;">
+    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <b>Message sent successfully.</b> We'll get in touch with you soon. 
+    </div>
+
+    <div class="contact-fail alert alert-warning alert-dismissible" role="alert" style="display:none;">
+    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <b>Sending message failed.</b> Sorry. Please send me an <a href="mailto:jeanette@creativepaintingandstenciling">email</a> or give me a call (330-819-1272).
+    </div>
+
+      <!-- <form class="form-horizontal" role="form" action="http://forms.brace.io/jeanette@creativepaintingandstenciling.com" method="POST" novalidate> -->
       <form class="form-horizontal" role="form" name="contactForm" novalidate>
+
         <div class="form-group" ng-class="{'has-error': contactForm.nameField.$dirty && contactForm.nameField.$invalid}">
           <label for="name" class="col-sm-2 control-label">Name</label>
           <div class="col-sm-7">
@@ -18,6 +31,7 @@
 
           </div>
         </div>
+
         <div class="form-group">
           <label for="email" class="col-sm-2 control-label">Email</label>
           <div class="col-sm-7">
