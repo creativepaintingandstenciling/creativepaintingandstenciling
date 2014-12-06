@@ -16,8 +16,6 @@ config(['$routeProvider', '$locationProvider', function ($routeProvider, $locati
     $routeProvider.when('/services', { templateUrl: 'views/services.html', controller: 'ServicesCtrl', activeTab: 'services' });
     $routeProvider.when('/contact', { templateUrl: 'views/contact.html', controller: 'ContactCtrl', activeTab: 'contact' });
     $routeProvider.otherwise({ redirectTo: '/home' });
-
-    
 }]);
 
 
