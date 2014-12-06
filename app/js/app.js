@@ -9,15 +9,15 @@ angular.module('cps', [
   //'cps.services',
   'mixDirective',
 ]).
-config(['$routeProvider', function ($routeProvider) {
-    
+config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
+    $locationProvider.hashPrefix('!');
     $routeProvider.when('/home', { templateUrl: 'views/home.html', controller: 'HomeCtrl', activeTab: 'home' });
     $routeProvider.when('/gallery', { templateUrl: 'views/gallery.html', controller: 'HomeCtrl', activeTab: 'gallery' });
     $routeProvider.when('/services', { templateUrl: 'views/services.html', controller: 'ServicesCtrl', activeTab: 'services' });
     $routeProvider.when('/contact', { templateUrl: 'views/contact.html', controller: 'ContactCtrl', activeTab: 'contact' });
     $routeProvider.otherwise({ redirectTo: '/home' });
 
-    //$locationProvider.html5Mode(true);
+    
 }]);
 
 
