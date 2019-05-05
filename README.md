@@ -1,7 +1,4 @@
-CPS
+# Creative Painting and Stenciling
 ===
 
-A complete site rewrite for my moms painting/stenciling company, Creative Painting and Stenciling by Jeanette. 
-
-Developed using AngularJS, Bootstrap, & jQuery.
-
+Portfolio site for Creative Painting and Stenciling by Jeanette Mosier.
