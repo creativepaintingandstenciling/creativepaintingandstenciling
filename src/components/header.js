@@ -5,7 +5,9 @@ import styled from 'styled-components';
 
 import { Container } from '../styles/core';
 
-const Heading = styled.h1`
+const HeaderContainer = styled.header``;
+
+const Title = styled.h1`
   font-family: 'Satisfy';
 
   a {
@@ -13,15 +15,17 @@ const Heading = styled.h1`
   }
 `;
 
-const Header = ({ siteTitle }) => (
-  <header>
-    <Container>
-      <Heading>
-        <Link to="/">{siteTitle}</Link>
-      </Heading>
-    </Container>
-  </header>
-);
+function Header({ siteTitle }) {
+  return (
+    <HeaderContainer>
+      <Container>
+        <Title>
+          <Link to="/">{siteTitle}</Link>
+        </Title>
+      </Container>
+    </HeaderContainer>
+  );
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
