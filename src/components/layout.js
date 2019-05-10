@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
 import Header from './header';
 
 import Reboot from '../styles/reboot';
+import theme from '../styles/theme';
 
 const Container = styled.div`
   padding-left: 20px;
@@ -18,13 +19,17 @@ function Layout({ children }) {
   return (
     <>
       <Reboot />
-      <Header siteTitle={title} />
-      <Container>
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()} {title}
-        </footer>
-      </Container>
+      <ThemeProvider theme={theme}>
+        <>
+          <Header siteTitle={title} />
+          <Container>
+            <main>{children}</main>
+            {/* <footer>
+              © {new Date().getFullYear()} {title}
+            </footer> */}
+          </Container>
+        </>
+      </ThemeProvider>
     </>
   );
 }

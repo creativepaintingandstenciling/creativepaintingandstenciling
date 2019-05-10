@@ -2,16 +2,15 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Carousel from '../components/carousel';
 
-function IndexPage() {
+function Services() {
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
-      {/* <Carousel /> */}
+      Services
     </Layout>
   );
 }
 
-export default IndexPage;
+export default Services;
