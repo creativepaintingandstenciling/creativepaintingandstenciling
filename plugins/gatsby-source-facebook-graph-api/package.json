@@ -1,0 +1,6 @@
+{
+    "name": "gatsby-source-facebook-graph-api",
+    "description": "Gatsby Source Plugin for Facebook Graph API",
+    "version": "1.0.0",
+    "main": "index.js"
+}
