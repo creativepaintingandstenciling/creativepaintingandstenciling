@@ -5,7 +5,10 @@
     "prettier/prettier": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "no-console": "warn"
+    "no-console": "warn",
+    "react/forbid-prop-types": [0],
+    "react/prop-types": [0, { "skipUndeclared": true }],
+    "import/prefer-default-export": [0]
   },
   "parser": "babel-eslint",
   "parserOptions": {

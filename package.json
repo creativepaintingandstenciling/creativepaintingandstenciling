@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
+    "can-use-dom": "^0.1.0",
     "crypto": "^1.0.1",
     "fbgraph": "^1.4.4",
     "flickity": "^2.2.0",
