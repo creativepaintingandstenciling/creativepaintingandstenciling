@@ -5,6 +5,8 @@ import FacebookContext from './FacebookContext';
 
 let api = null;
 
+// https://github.com/seeden/react-facebook/blob/master/README.md
+
 export default class Facebook extends Component {
   static defaultProps = {
     version: 'v3.3',
