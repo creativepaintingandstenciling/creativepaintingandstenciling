@@ -8,12 +8,13 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import FB from '../containers/Facebook';
 import useDataApi from '../hooks/useDataApi';
+import InfiniteScroll from '../components/infiniteScroll';
 
 // https://developers.facebook.com/docs/graph-api/reference/v3.3/page/photos
 // https://developers.facebook.com/tools/explorer/?method=GET&path=matsandmutts%2Fphotos%3Ffields%3Dimages&version=v3.3
 
 const GridItem = styled.div`
-  width: calc(25% - 5px);
+  width: calc(25% - 15px);
 `;
 
 const GridImg = styled.img`
@@ -75,7 +76,7 @@ function Portfolio() {
         { mq: '1024px', columns: 4, gutter: 50 },
       ],
       packed: 'data-packed',
-      position: true,
+      position: false,
     })
       .resize()
       .pack();
@@ -92,20 +93,24 @@ function Portfolio() {
     // eslint-disable-next-line
   }, [state.isLoading]);
 
-  // const onFetch = () => {
-  //   setShouldFetch(true);
-  // };
+  const onFetch = () => {
+    console.log('should fetch');
+    setShouldFetch(true);
+  };
 
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-
-      <div ref={wrapperRef}>
-        {(state.data || []).map((item, index) => (
-          <GridItem key={index}>
-            <GridImg key={index} src={item.full_picture} />
-          </GridItem>
-        ))}
+      <div style={{ paddingBottom: '40px' }}>
+        <InfiniteScroll onLoadMore={onFetch}>
+          <div ref={wrapperRef}>
+            {(state.data || []).map((item, index) => (
+              <GridItem key={index}>
+                <GridImg key={index} src={item.full_picture} />
+              </GridItem>
+            ))}
+          </div>
+        </InfiniteScroll>
       </div>
     </Layout>
   );
